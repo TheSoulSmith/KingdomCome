@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Limit Chat To Kingdom",
+    "description": "Whether or not to only allow players to chat within their own kingdom, exept the king, who can swich between kingdom and global chat regardless",
+    "category": "CHAT",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

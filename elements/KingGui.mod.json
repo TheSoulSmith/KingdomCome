@@ -1,0 +1,214 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 255,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "PlayerSearchBox",
+          "width": 248,
+          "height": 20,
+          "x": 89,
+          "y": 45
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "KingdomName",
+          "width": 248,
+          "height": 20,
+          "x": 89,
+          "y": 23
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "FirstPlayerSearchResult"
+          },
+          "displayCondition": {
+            "name": "FoundPlayerSearchResult"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": true,
+          "x": 132,
+          "y": 196
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_first_player_search_result",
+          "text": {
+            "fixedValue": "",
+            "name": "FirstPlayerSearchResultName"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 90,
+          "y": 85
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "FreeEntry",
+          "text": "Allow Free Entry",
+          "isCheckedProcedure": {
+            "name": "CurrentKingdomFreeEntry"
+          },
+          "x": 90,
+          "y": 65
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_allow_players_to_join_without_an",
+          "text": {
+            "fixedValue": "Allow players to join without an invite or firs requesting entry"
+          },
+          "width": 111,
+          "height": 20,
+          "x": 89,
+          "y": 65
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_the_name_of_your_kingdom_you_ca",
+          "text": {
+            "fixedValue": "The name of your kingdom, you can edit it"
+          },
+          "width": 247,
+          "height": 20,
+          "x": 89,
+          "y": 23
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "FriendlyFire",
+          "text": "Friendly fire",
+          "x": 217,
+          "y": 65
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_allow_citizens_of_your_kingdom_t",
+          "text": {
+            "fixedValue": "Allow citizens of your kingdom to damage each other, also effects damaging pets belonging to members of your kingdom"
+          },
+          "width": 96,
+          "height": 21,
+          "x": 216,
+          "y": 64
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_invite",
+          "text": "Invite",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Invite"
+          },
+          "displayCondition": {
+            "name": "PlayerValidToInvite"
+          },
+          "width": 141,
+          "height": 20,
+          "x": 197,
+          "y": 197
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_revoke_invite",
+          "text": "Revoke Invite",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "RevokeInvite"
+          },
+          "displayCondition": {
+            "name": "IsInvitedTo"
+          },
+          "width": 141,
+          "height": 20,
+          "x": 197,
+          "y": 177
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_accept_citizenship_request",
+          "text": "Accept Citizenship Request",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "AcceptEntryRequest"
+          },
+          "displayCondition": {
+            "name": "HasRequestedEntry"
+          },
+          "width": 141,
+          "height": 20,
+          "x": 197,
+          "y": 157
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_banish",
+          "text": "Banish",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Banish"
+          },
+          "displayCondition": {
+            "name": "IsInKingdom"
+          },
+          "width": 141,
+          "height": 20,
+          "x": 197,
+          "y": 137
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "KingGuiOpened"
+    },
+    "onClosed": {
+      "name": "KingGuiClosed"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

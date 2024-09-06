@@ -1,0 +1,112 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_kingdom",
+          "text": {
+            "fixedValue": "Kingdom: "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 40
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_kingdom_provider",
+          "text": {
+            "fixedValue": "",
+            "name": "KingdomProvider"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 177,
+          "y": 40
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_king",
+          "text": {
+            "fixedValue": "King: "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_king_name_provider",
+          "text": {
+            "fixedValue": "",
+            "name": "KingNameProvider"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 162,
+          "y": 53
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "KingProvider"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "x": 170,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_leave",
+          "text": "Leave",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LeaveKingdom"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 249,
+          "y": 180
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

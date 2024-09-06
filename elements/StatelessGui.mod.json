@@ -1,0 +1,218 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "KingdomSearchBox",
+          "width": 169,
+          "height": 20,
+          "x": 129,
+          "y": 40
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_first_kingdom_search_result",
+          "text": {
+            "fixedValue": "",
+            "name": "FirstKingdomSearchResult"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 106
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_king",
+          "text": {
+            "fixedValue": "King: "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 129,
+          "y": 116
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_first_king_search_result_na",
+          "text": {
+            "fixedValue": "",
+            "name": "FirstKingSearchResultName"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 158,
+          "y": 116
+        }
+      },
+      {
+        "type": "entitymodel",
+        "data": {
+          "entityModel": {
+            "name": "FirstKingSearchResult"
+          },
+          "displayCondition": {
+            "name": "FoundKingdomSearchResult"
+          },
+          "scale": 30,
+          "rotationX": 0,
+          "followMouseMovement": false,
+          "x": 158,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_join",
+          "text": "Join",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "JoinFirstKingdomSearchResult"
+          },
+          "displayCondition": {
+            "name": "FirstKingdomSearchResultFreeEntry"
+          },
+          "width": 99,
+          "height": 20,
+          "x": 200,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "Request Citizenship",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "RequestEntry"
+          },
+          "displayCondition": {
+            "name": "FirstKingdomSearchResultNoFreeEntry"
+          },
+          "width": 99,
+          "height": 20,
+          "x": 200,
+          "y": 127
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_you_are_currently_invited_to",
+          "text": {
+            "fixedValue": "You are currently invited to:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "HasInvite"
+          },
+          "x": 129,
+          "y": 61
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_invited_to",
+          "text": {
+            "fixedValue": "",
+            "name": "InvitedTo"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "HasInvite"
+          },
+          "x": 129,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_accept",
+          "text": "Accept",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "AcceptInvite"
+          },
+          "displayCondition": {
+            "name": "HasInvite"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 128,
+          "y": 81
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_decline",
+          "text": "Decline",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "DeclineInvite"
+          },
+          "displayCondition": {
+            "name": "HasInvite"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 238,
+          "y": 81
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_the_name_and_king_of_the_first_k",
+          "text": {
+            "fixedValue": "The name and king of the first kingdom to fit your search"
+          },
+          "width": 170,
+          "height": 20,
+          "x": 128,
+          "y": 107
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

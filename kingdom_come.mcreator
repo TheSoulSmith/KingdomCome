@@ -1,0 +1,1066 @@
+{
+  "mod_elements": [
+    {
+      "name": "KingdomProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kingdom_provider",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/KingdomProviderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KingGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "king_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/world/inventory/KingGuiMenu.java",
+          "src/main/java/net/mcreator/kingdomcome/client/gui/KingGuiScreen.java",
+          "src/main/java/net/mcreator/kingdomcome/network/KingGuiButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "FirstPlayerSearchResult",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "first_player_search_result",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FirstPlayerSearchResultProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "entity"
+      }
+    },
+    {
+      "name": "KingGuiOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "king_gui_opened",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/KingGuiOpenedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LimitChatToKingdom",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limit_chat_to_kingdom",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "ChatKingdomProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chat_kingdom_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/ChatKingdomProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChatKingdom",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chat_kingdom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/command/ChatKingdomCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ChatGlobalProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chat_global_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/ChatGlobalProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ChatGlobal",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chat_global",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/command/ChatGlobalCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "LimitChatToKingdomProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "limit_chat_to_kingdom_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/LimitChatToKingdomProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FoundPlayerSearchResult",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "found_player_search_result",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FoundPlayerSearchResultProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FoundKingdomProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "found_kingdom_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FoundKingdomProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FoundKingdom",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "found_kingdom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/command/FoundKingdomCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "KingGuiClosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "king_gui_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/KingGuiClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FirstPlayerSearchResultName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "first_player_search_result_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FirstPlayerSearchResultNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KingdomComeGui",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kingdom_come_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/network/KingdomComeGuiMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "CitizenGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "citizen_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/network/CitizenGuiButtonMessage.java",
+          "src/main/java/net/mcreator/kingdomcome/world/inventory/CitizenGuiMenu.java",
+          "src/main/java/net/mcreator/kingdomcome/client/gui/CitizenGuiScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "KingdomComeGuiProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kingdom_come_gui_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/KingdomComeGuiProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StatelessGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stateless_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/client/gui/StatelessGuiScreen.java",
+          "src/main/java/net/mcreator/kingdomcome/network/StatelessGuiButtonMessage.java",
+          "src/main/java/net/mcreator/kingdomcome/world/inventory/StatelessGuiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "FirstKingdomSearchResult",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "first_kingdom_search_result",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FirstKingdomSearchResultProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FoundKingdomSearchResult",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "found_kingdom_search_result",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FoundKingdomSearchResultProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FirstKingSearchResult",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "first_king_search_result",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FirstKingSearchResultProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FirstKingSearchResultName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "first_king_search_result_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FirstKingSearchResultNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CurrentKingdomFreeEntry",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_kingdom_free_entry",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/CurrentKingdomFreeEntryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FirstKingdomSearchResultFreeEntry",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "first_kingdom_search_result_free_entry",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FirstKingdomSearchResultFreeEntryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FirstKingdomSearchResultNoFreeEntry",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "first_kingdom_search_result_no_free_entry",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FirstKingdomSearchResultNoFreeEntryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JoinFirstKingdomSearchResult",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "join_first_kingdom_search_result",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/JoinFirstKingdomSearchResultProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RequestEntry",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "request_entry",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/RequestEntryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayerValidToInvite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_valid_to_invite",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/PlayerValidToInviteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DeclineInvite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decline_invite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/DeclineInviteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HasInvite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "has_invite",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/HasInviteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InvitedTo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invited_to",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/InvitedToProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AcceptInvite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accept_invite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/AcceptInviteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Invite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/InviteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FriendlyFireVar",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "friendly_fire_var",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FriendlyFireVarProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IsInvitedTo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_invited_to",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/IsInvitedToProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RevokeInvite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revoke_invite",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/RevokeInviteProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HasRequestedEntry",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "has_requested_entry",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/HasRequestedEntryProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AcceptEntryRequest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "accept_entry_request",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/AcceptEntryRequestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KingProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "king_provider",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/KingProviderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KingNameProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "king_name_provider",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/KingNameProviderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LeaveKingdom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leave_kingdom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/LeaveKingdomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IsInKingdom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_in_kingdom",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/IsInKingdomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Banish",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "banish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/BanishProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FriendlyFire",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "friendly_fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/kingdomcome/procedures/FriendlyFireProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "Kingdom",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "ChatKingdom",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "IsKing",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "FreeEntry",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Accepted",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "InvitedTo",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "FriendlyFire",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.kingdom_come.king_gui.tooltip_the_name_of_your_kingdom_you_ca": "The name of your kingdom, you can edit it",
+      "gui.kingdom_come.king_gui.FriendlyFire": "Friendly fire",
+      "gui.kingdom_come.king_gui.PlayerSearchBox": "",
+      "gui.kingdom_come.citizen_gui.button_leave": "Leave",
+      "gui.kingdom_come.stateless_gui.tooltip_the_name_and_king_of_the_first_k": "The name and king of the first kingdom to fit your search",
+      "gui.kingdom_come.king_gui.tooltip_allow_players_to_join_without_an": "Allow players to join without an invite or firs requesting entry",
+      "gui.kingdom_come.king_gui.button_banish": "Banish",
+      "gui.kingdom_come.king_gui.FreeEntry": "Allow Free Entry",
+      "gui.kingdom_come.stateless_gui.button_join": "Join",
+      "gui.kingdom_come.stateless_gui.button_decline": "Decline",
+      "gui.kingdom_come.king_gui.tooltip_allow_citizens_of_your_kingdom_t": "Allow citizens of your kingdom to damage each other, also effects damaging pets belonging to members of your kingdom",
+      "gui.kingdom_come.king_gui.button_accept_citizenship_request": "Accept Citizenship Request",
+      "gamerule.limitChatToKingdom": "Limit Chat To Kingdom",
+      "key.kingdom_come.kingdom_come_gui": "Open King/Citizen Menu",
+      "gui.kingdom_come.stateless_gui.KingdomSearchBox": "",
+      "gui.kingdom_come.citizen_gui.label_king": "King: ",
+      "gui.kingdom_come.stateless_gui.button_accept": "Accept",
+      "gui.kingdom_come.stateless_gui.label_you_are_currently_invited_to": "You are currently invited to:",
+      "gui.kingdom_come.stateless_gui.label_king": "King: ",
+      "gui.kingdom_come.citizen_gui.label_kingdom": "Kingdom: ",
+      "gui.kingdom_come.king_gui.KingdomName": "",
+      "gui.kingdom_come.king_gui.button_revoke_invite": "Revoke Invite",
+      "gui.kingdom_come.king_gui.button_invite": "Invite",
+      "gui.kingdom_come.stateless_gui.button_empty": "Request Citizenship",
+      "gamerule.limitChatToKingdom.description": "Whether or not to only allow players to chat within their own kingdom, exept the king, who can swich between kingdom and global chat regardless"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "kingdom_come",
+    "modName": "Kingdom Come",
+    "version": "0.1.0",
+    "description": "A mod to allow you to run a kingdom with other players.",
+    "author": "The_Soul_Smith, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Public Domain",
+    "serverSideOnly": false,
+    "modPicture": "kingdomcomeimage",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.kingdomcome"
+  },
+  "mcreatorVersion": 202400232117
+}
